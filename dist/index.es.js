@@ -1,6 +1,6 @@
-import he, { createContext as be, useEffect as ce, useContext as Ee, useState as ae, useRef as se, useCallback as fe } from "react";
+import ve, { createContext as be, useEffect as ce, useContext as Ee, useState as ae, useRef as se, useCallback as fe } from "react";
 import { Howl as le } from "howler";
-import { AudioWaveform as ye, AudioLines as ke, Waves as Re, Volume2 as Te } from "lucide-react";
+import { Trophy as ye, AudioWaveform as ke, AudioLines as Re, Waves as Te, Volume2 as ge } from "lucide-react";
 var V = { exports: {} }, M = {};
 /**
  * @license React
@@ -12,7 +12,7 @@ var V = { exports: {} }, M = {};
  * LICENSE file in the root directory of this source tree.
  */
 var de;
-function ge() {
+function _e() {
   if (de) return M;
   de = 1;
   var i = Symbol.for("react.transitional.element"), d = Symbol.for("react.fragment");
@@ -44,7 +44,7 @@ var W = {};
  * LICENSE file in the root directory of this source tree.
  */
 var pe;
-function _e() {
+function xe() {
   return pe || (pe = 1, process.env.NODE_ENV !== "production" && function() {
     function i(e) {
       if (e == null) return null;
@@ -152,7 +152,7 @@ function _e() {
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function R(e, r, t, o, f, c, C, h) {
+    function R(e, r, t, o, f, c, C, b) {
       return t = c.ref, e = {
         $$typeof: P,
         type: e,
@@ -181,28 +181,28 @@ function _e() {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: h
+        value: b
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function T(e, r, t, o, f, c, C, h) {
+    function T(e, r, t, o, f, c, C, b) {
       var n = r.children;
       if (n !== void 0)
         if (o)
           if (H(n)) {
             for (o = 0; o < n.length; o++)
-              j(n[o]);
+              A(n[o]);
             Object.freeze && Object.freeze(n);
           } else
             console.error(
               "React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead."
             );
-        else j(n);
+        else A(n);
       if (L.call(r, "key")) {
         n = i(e);
-        var b = Object.keys(r).filter(function(oe) {
+        var E = Object.keys(r).filter(function(oe) {
           return oe !== "key";
         });
-        o = 0 < b.length ? "{key: someKey, " + b.join(": ..., ") + ": ...}" : "{key: someKey}", q[n + o] || (b = 0 < b.length ? "{" + b.join(": ..., ") + ": ...}" : "{}", console.error(
+        o = 0 < E.length ? "{key: someKey, " + E.join(": ..., ") + ": ...}" : "{key: someKey}", q[n + o] || (E = 0 < E.length ? "{" + E.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -211,7 +211,7 @@ React keys must be passed directly to JSX without using spread:
   <%s key={someKey} {...props} />`,
           o,
           n,
-          b,
+          E,
           n
         ), q[n + o] = !0);
       }
@@ -231,13 +231,13 @@ React keys must be passed directly to JSX without using spread:
         s(),
         t,
         C,
-        h
+        b
       );
     }
-    function j(e) {
+    function A(e) {
       typeof e == "object" && e !== null && e.$$typeof === P && e._store && (e._store.validated = 1);
     }
-    var m = he, P = Symbol.for("react.transitional.element"), Z = Symbol.for("react.portal"), O = Symbol.for("react.fragment"), z = Symbol.for("react.strict_mode"), Q = Symbol.for("react.profiler"), U = Symbol.for("react.consumer"), X = Symbol.for("react.context"), K = Symbol.for("react.forward_ref"), ee = Symbol.for("react.suspense"), re = Symbol.for("react.suspense_list"), te = Symbol.for("react.memo"), B = Symbol.for("react.lazy"), $ = Symbol.for("react.activity"), N = Symbol.for("react.client.reference"), g = m.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, L = Object.prototype.hasOwnProperty, H = Array.isArray, w = console.createTask ? console.createTask : function() {
+    var m = ve, P = Symbol.for("react.transitional.element"), Z = Symbol.for("react.portal"), O = Symbol.for("react.fragment"), z = Symbol.for("react.strict_mode"), Q = Symbol.for("react.profiler"), U = Symbol.for("react.consumer"), X = Symbol.for("react.context"), K = Symbol.for("react.forward_ref"), ee = Symbol.for("react.suspense"), re = Symbol.for("react.suspense_list"), te = Symbol.for("react.memo"), B = Symbol.for("react.lazy"), $ = Symbol.for("react.activity"), N = Symbol.for("react.client.reference"), g = m.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, L = Object.prototype.hasOwnProperty, H = Array.isArray, w = console.createTask ? console.createTask : function() {
       return null;
     };
     m = {
@@ -277,11 +277,11 @@ React keys must be passed directly to JSX without using spread:
   }()), W;
 }
 var me;
-function xe() {
-  return me || (me = 1, process.env.NODE_ENV === "production" ? V.exports = ge() : V.exports = _e()), V.exports;
+function Se() {
+  return me || (me = 1, process.env.NODE_ENV === "production" ? V.exports = _e() : V.exports = xe()), V.exports;
 }
-var y = xe();
-const Se = (i, d) => {
+var h = Se();
+const Ce = (i, d) => {
   const a = {
     className: d ? "sound-indicator" : "",
     size: i.size ?? 20,
@@ -289,18 +289,20 @@ const Se = (i, d) => {
   };
   switch (i.name) {
     case "speaker":
-      return /* @__PURE__ */ y.jsx(Te, { ...a });
+      return /* @__PURE__ */ h.jsx(ge, { ...a });
     case "waves":
-      return /* @__PURE__ */ y.jsx(Re, { ...a });
+      return /* @__PURE__ */ h.jsx(Te, { ...a });
     case "audioLines":
-      return /* @__PURE__ */ y.jsx(ke, { ...a });
+      return /* @__PURE__ */ h.jsx(Re, { ...a });
     case "audioWaves":
-      return /* @__PURE__ */ y.jsx(ye, { ...a });
+      return /* @__PURE__ */ h.jsx(ke, { ...a });
+    case "trophy":
+      return /* @__PURE__ */ h.jsx(ye, { ...a });
     default:
       return null;
   }
 }, we = be({});
-function Pe({ children: i, ...d }) {
+function Oe({ children: i, ...d }) {
   return ce(() => {
     const a = () => {
       const p = new Audio();
@@ -308,10 +310,10 @@ function Pe({ children: i, ...d }) {
       }), window.removeEventListener("click", a);
     };
     return window.addEventListener("click", a), () => window.removeEventListener("click", a);
-  }, []), /* @__PURE__ */ y.jsx(we.Provider, { value: d, children: i });
+  }, []), /* @__PURE__ */ h.jsx(we.Provider, { value: d, children: i });
 }
 const ie = /* @__PURE__ */ new Map();
-function Oe(i) {
+function $e(i) {
   var ue;
   const d = Ee(we), {
     children: a,
@@ -323,7 +325,7 @@ function Oe(i) {
     fetchCooldown: G = 1e4,
     clickCooldown: R = 0,
     hoverFX: T = null,
-    enableHaptics: j = !0,
+    enableHaptics: A = !0,
     keyboardKey: m = null,
     icon: P = null,
     showTooltip: Z = !1,
@@ -402,48 +404,48 @@ function Oe(i) {
       transform: ${o[z] || "translateX(-50%)"};
       transition: ${c[Q] || c.fade};
     }
-  `, h = p || "boop", n = fe((l) => {
+  `, b = p || "boop", n = fe((l) => {
     if (!l) return;
-    const A = Date.now();
+    const j = Date.now();
     new le({
-      src: [`${l}?t=${A}`],
+      src: [`${l}?t=${j}`],
       autoplay: !0,
       onloaderror: (x, F) => console.error("Howler load error:", F),
       onplay: () => w(!0),
       onend: () => w(!1)
-    }).play(), j && window.navigator.vibrate && window.navigator.vibrate(50), R > 0 && (L(!1), setTimeout(() => L(!0), R));
-  }, [R, j]), b = async () => {
+    }).play(), A && window.navigator.vibrate && window.navigator.vibrate(50), R > 0 && (L(!1), setTimeout(() => L(!0), R));
+  }, [R, A]), E = async () => {
     const l = Date.now();
     if (s) {
       ie.set("custom", s), N(s);
       return;
     }
-    const A = ie.get(h);
-    if (A && l - Y.current < G) {
-      N(A);
+    const j = ie.get(b);
+    if (j && l - Y.current < G) {
+      N(j);
       return;
     }
     try {
-      const E = B ?? (typeof window < "u" && window.location.hostname === "localhost" ? "" : "https://soundzjs.vercel.app"), x = await fetch(`${E}/api/sounds?sound=${h}`), F = x.headers.get("content-type");
+      const y = B ?? (typeof window < "u" && window.location.hostname === "localhost" ? "" : "https://soundzjs.vercel.app"), x = await fetch(`${y}/api/sounds?sound=${b}`), F = x.headers.get("content-type");
       if (!x.ok)
         throw new Error(`Fetch failed: ${x.status} ${x.statusText}`);
       if (!(F != null && F.includes("application/json"))) {
-        const ve = await x.text();
-        throw new Error(`Expected JSON, got: ${ve.slice(0, 100)}...`);
+        const he = await x.text();
+        throw new Error(`Expected JSON, got: ${he.slice(0, 100)}...`);
       }
       const I = await x.json();
-      I != null && I.url && (ie.set(h, I.url), N(I.url), Y.current = l);
-    } catch (E) {
-      console.error("Sound fetch failed:", E);
+      I != null && I.url && (ie.set(b, I.url), N(I.url), Y.current = l);
+    } catch (y) {
+      console.error("Sound fetch failed:", y);
     }
   };
   ce(() => {
-    b();
+    E();
     const l = document.createElement("style");
     return l.innerHTML = C, document.head.appendChild(l), S.current = l, () => {
       S.current && document.head.removeChild(S.current);
     };
-  }, [s, h, C]);
+  }, [s, b, C]);
   const _ = () => {
     if (!u) {
       const l = Date.now();
@@ -455,13 +457,13 @@ function Oe(i) {
     T && (T.includes("/") ? new le({
       src: [`${T}?t=${Date.now()}`],
       autoplay: !0,
-      onloaderror: (A, E) => console.error("Howler load error:", E),
+      onloaderror: (j, y) => console.error("Howler load error:", y),
       onplay: () => w(!0),
       onend: () => w(!1)
     }).play() : new le({
       src: [`${l}/sounds/${T}.mp3?t=${Date.now()}`],
       autoplay: !0,
-      onloaderror: (A, E) => console.error("Howler load error:", E),
+      onloaderror: (j, y) => console.error("Howler load error:", y),
       onplay: () => w(!0),
       onend: () => w(!1)
     }).play());
@@ -471,7 +473,7 @@ function Oe(i) {
   return ce(() => {
     if (m)
       return window.addEventListener("keydown", ne), () => window.removeEventListener("keydown", ne);
-  }, [m, ne]), $ ? /* @__PURE__ */ y.jsxs(
+  }, [m, ne]), $ ? /* @__PURE__ */ h.jsxs(
     "div",
     {
       className: `wrap ${g ? "" : "disabled"} ${re}`,
@@ -480,14 +482,14 @@ function Oe(i) {
       style: te,
       tabIndex: 0,
       children: [
-        H && Z && /* @__PURE__ */ y.jsx("div", { className: "tooltip", children: O }),
-        P && Se(P, H),
+        H && Z && /* @__PURE__ */ h.jsx("div", { className: "tooltip", children: O }),
+        P && Ce(P, H),
         a
       ]
     }
-  ) : v ? v() : /* @__PURE__ */ y.jsx("p", { children: "Loading sound…" });
+  ) : v ? v() : /* @__PURE__ */ h.jsx("p", { children: "Loading sound…" });
 }
 export {
-  Oe as Soundz,
-  Pe as SoundzProvider
+  $e as Soundz,
+  Oe as SoundzProvider
 };

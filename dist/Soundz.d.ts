@@ -5,7 +5,7 @@ export type SoundzTheme = {
     pulseColor?: string;
 };
 interface IconProps {
-    name: 'speaker' | 'waves' | 'audioLines' | 'audioWaves';
+    name: 'speaker' | 'waves' | 'audioLines' | 'audioWaves' | 'trophy';
     size?: number;
     strokeWidth?: number;
 }

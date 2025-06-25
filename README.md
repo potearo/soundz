@@ -63,7 +63,7 @@ import { Soundz, SoundzProvider } from 'soundz';
 - <code style="color: #ff0072;">tooltipPosition</code><strong>: top | bottom | left | right</strong>
 - <code style="color: #ff0072;">tooltipAnimation</code><strong>: fade | scale | slide</strong>
 - <code style="color: #ff0072;">animationSpeed</code><strong>: [string] — Pulse animation speed</strong>
-- <code style="color: #ff0072;">icon</code><strong>: [object] — Select animated icon (speaker, waves, audioWaves, audioLines) or omit prop for no icon</strong>
+- <code style="color: #ff0072;">icon</code><strong>: [object] — Select animated icon (speaker, waves, audioWaves, audioLines, trophy) or omit prop for no icon</strong>
 - <code style="color: #ff0072;">theme</code><strong>: auto | light | dark | neon | pastel | mono</strong>
 - <code style="color: #ff0072;">customTheme</code><strong>: [object] - Declare your own theme and merge/override the defaults (ex: <code style="color: #ffbd0a;">customTheme={{tooltipBg: '#ff1493', tooltipColor: '#ffffff', pulseColor: '#ff1493'}}</code>)</strong>
 - <code style="color: #ff0072;">className</code><strong>: [string] — CSS class for wrapper</strong>
@@ -81,6 +81,7 @@ __{ name: (REQUIRED), size: (OPTIONAL - default=20), strokeWidth: (OPTIONAL - de
   <li>Waves → <code style="color: #ff0072;">icon={{name: "waves", size: 20, strokeWidth: 2.5}}</code></li>
   <li>AudioWaves → <code style="color: #ff0072;">icon={{name: "audioWaves", size: 20, strokeWidth: 2.5}}</code></li>
   <li>AudioLines → <code style="color: #ff0072;">icon={{name: "audioLines", size: 20, strokeWidth: 2.5}}</code></li>
+  <li>Trophy → <code style="color: #ff0072;">icon={{name: "trophy", size: 20, strokeWidth: 2.5}}</code></li>
 </ul>
 
 ## 🎧 Provided Sounds

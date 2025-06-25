@@ -9,7 +9,7 @@ import React, {
   CSSProperties
 } from 'react';
 import { Howl } from 'howler';
-import { Volume2, Waves, AudioLines, AudioWaveform } from 'lucide-react';
+import { Volume2, Waves, AudioLines, AudioWaveform, Trophy } from 'lucide-react';
 
 export type SoundzTheme = {
   tooltipBg?: string;
@@ -18,7 +18,7 @@ export type SoundzTheme = {
 };
 
 interface IconProps {
-  name: 'speaker' | 'waves' | 'audioLines' | 'audioWaves';
+  name: 'speaker' | 'waves' | 'audioLines' | 'audioWaves' | 'trophy';
   size?: number;
   strokeWidth?: number;
 }
@@ -42,6 +42,8 @@ const getIcon = (
       return <AudioLines {...commonProps} />;
     case 'audioWaves':
       return <AudioWaveform {...commonProps} />;
+    case 'trophy':
+      return <Trophy {...commonProps} />;
     default:
       return null;
   }

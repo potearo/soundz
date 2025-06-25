@@ -32,7 +32,7 @@
 
 ## 📖 Documentation
 
-<a style="padding: 5px; border: 1.5px solid #e70067; border-radius: 3px; font-weight: 900; text-decoration: none; color: #ffffff; background-color: #ff0072; cursor: pointer;" href="https://soundz.vercel.app/docs">
+<a style="padding: 5px; border: 1.5px solid #e70067; border-radius: 3px; font-weight: 900; text-decoration: none; color: #ffffff; background-color: #ff0072; cursor: pointer;" href="https://soundzjs.vercel.app/docs">
   Soundz Docs →
 </a>
 

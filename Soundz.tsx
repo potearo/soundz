@@ -261,7 +261,7 @@ export function Soundz(props: SoundzProps) {
         apiBaseUrl ??
         (typeof window !== 'undefined' && window.location.hostname === 'localhost'
           ? ''
-          : 'https://soundz.vercel.app');
+          : 'https://soundzjs.vercel.app');
 
       const res = await fetch(`${base}/api/sounds?sound=${fallbackFX}`);
       const contentType = res.headers.get('content-type');
@@ -310,7 +310,7 @@ export function Soundz(props: SoundzProps) {
     const base = (
       typeof window !== 'undefined' && window.location.hostname === 'localhost'
       ? 'http://localhost:3000'
-      : 'https://soundz.vercel.app'
+      : 'https://soundzjs.vercel.app'
     );
 
     if (hoverFX) {

@@ -1,6 +1,6 @@
 {
   "name": "soundz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sound Effects Wrapper for Components.",
   "type": "module",
   "main": "dist/index.umd.js",
@@ -93,5 +93,5 @@
   "bugs": {
     "url": "https://github.com/kazewaze/soundz/issues"
   },
-  "homepage": "https://soundz.vercel.app"
+  "homepage": "https://soundzjs.vercel.app"
 }

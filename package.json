@@ -1,0 +1,97 @@
+{
+  "name": "soundz",
+  "version": "1.0.0",
+  "description": "Sound Effects Wrapper for Components.",
+  "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "BUILD=true vite build && tsc",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "ts",
+    "jsx",
+    "tsx",
+    "javascript",
+    "typescript",
+    "reactjs",
+    "react",
+    "nextjs",
+    "next",
+    "vitejs",
+    "vite",
+    "howlerjs",
+    "howler",
+    "howl",
+    "wrap",
+    "wrapper",
+    "provider",
+    "providers",
+    "library",
+    "component library",
+    "components",
+    "component",
+    "flexible",
+    "accessible",
+    "accessibility",
+    "customize",
+    "customizable",
+    "sound effects",
+    "sound effect",
+    "sound-effects",
+    "sound-effect",
+    "sounds",
+    "sound",
+    "music",
+    "audio",
+    "files",
+    "file",
+    ".mp3",
+    "mp3",
+    "fx",
+    "api"
+  ],
+  "author": "Kaycee Ingram",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.12",
+    "@types/node": "^24.0.3",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "lucide-react": "^0.518.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kazewaze/soundz"
+  },
+  "bugs": {
+    "url": "https://github.com/kazewaze/soundz/issues"
+  },
+  "homepage": "https://soundz.vercel.app"
+}

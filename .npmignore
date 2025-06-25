@@ -1,0 +1,10 @@
+node_modules/
+assets/
+dev/
+main.jsx
+index.html
+*.log
+vite.config.ts
+tsup.config.ts
+tsconfig.json
+*.test.tsx
